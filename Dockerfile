@@ -12,7 +12,7 @@ RUN apt-get update
 # This image adds the p910nd to the image.
 # ==============================================================================
 FROM p910nd-base AS p910nd
-RUN apt-get install -yq p910nd nano htop \
+RUN apt-get install -yq p910nd \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && mkdir /var/lock/p910nd
